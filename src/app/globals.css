@@ -15,3 +15,11 @@ body {
   color: var(--color-bec-text);
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.clip-path-polygon {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
