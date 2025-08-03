@@ -6,20 +6,18 @@
 }
 
 @theme inline {
-  --color-bec-text: #D9D9D9;
+  --color-bec-white: #D9D9D9;
   --color-bec-bg:#050505;
+  --color-bec: #F5A020;
 }
 
 body {
   background: var(--color-bec-bg);
-  color: var(--color-bec-text);
+  color: var(--color-bec-white);
+
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.clip-path-polygon {
-  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 }

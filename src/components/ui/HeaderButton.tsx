@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface HeaderButtonProps {
@@ -6,27 +7,27 @@ interface HeaderButtonProps {
 
 const HeaderButton = ({ text }: HeaderButtonProps) => {
   return (
-    <button
-      className="relative text-white py-2 px-6 text-base font-medium bg-transparent overflow-hidden"
-      style={{ backgroundColor: 'transparent' }}
-    >
-      <span className="relative z-10">{text}</span>
-      <svg
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        preserveAspectRatio="none"
-        viewBox="0 0 200 50"
-        style={{ display: 'block' }}
-      >
-        <path
-          d="M0,10 L0,40 L10,50 L190,50 L200,40 L200,10 L190,0 L10,0 Z"
-          stroke="white"
-          strokeWidth="2"
-          fill="none"
-          strokeLinejoin="miter"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
+    <button className="relative group cursor-pointer p-4 flex items-center justify-center text-base">
+      {/* Звичайне зображення */}
+      <Image
+        width={170}
+        height={50}
+        src="/header/btn.svg"
+        alt="button background"
+        className="absolute top-3 left-0 transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0"
+      />
+      {/* Hover-зображення */}
+      <Image
+        width={160}
+        height={50}
+        src="/header/btn-hover.svg"
+        alt="button background hover"
+        className="absolute top-3 left-0 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+      />
+      {/* Текст — поверх зображення, теж анімується */}
+      <span className="relative z-10 transition-transform duration-300 ease-in-out group-hover:scale-102">
+        {text}
+      </span>
     </button>
   );
 };
