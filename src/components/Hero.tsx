@@ -1,5 +1,6 @@
 import { Audiowide } from 'next/font/google';
 import Image from 'next/image'
+import HeroButton from './ui/HeroButton';
 
 const awide = Audiowide({
   weight: ['400'],
@@ -16,10 +17,10 @@ const Hero = () => {
         src="/hero/hero-bg.svg"
       />
       
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center h-full">
-        <div className="z-10 max-w-[1000px] space-y-6">
+      <div className="container mx-auto px-4 h-full pt-50">
+        <div className="z-10 max-w-[1000px] space-y-3">
           <p
-            className={`text-[80px] uppercase font-bold tracking-wide leading-[1.3] ${awide.className}`}
+            className={`text-[80px] uppercase font-bold tracking-wide leading-[1.0] ${awide.className}`}
           >
             BEST Engineering Competition
           </p>
@@ -35,9 +36,13 @@ const Hero = () => {
               24–28 жовтня
             </p>
           </div>
-          <p className='text-4xl max-w-[900px]'>
+          <p className='text-3xl max-w-[900px]'>
             Інженери не чекають на майбутнє — вони його будують
           </p>
+          <div className='flex gap-12 mt-10'>
+            <HeroButton text='ЗАРЕЄСТРУВАТИСЯ'/>
+            <HeroButton text='СТАТИ ПАРТНЕРОМ'/>
+          </div>
         </div>
       </div>
     </section>
