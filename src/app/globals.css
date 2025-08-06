@@ -9,6 +9,16 @@
   --color-bec-white: #D9D9D9;
   --color-bec-bg:#050505;
   --color-bec: #F5A020;
+  --color-bec-transparent: rgba(245, 160, 32, 0.05);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
 }
 
 body {
@@ -20,4 +30,8 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.animate-gradient {
+  animation: gradientShift 8s linear infinite;
 }
