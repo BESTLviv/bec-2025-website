@@ -1,8 +1,16 @@
 import Image from "next/image"
 import Link from "next/link"
 import HeaderButton from "./ui/HeaderButton"
+import { HeaderProps } from "@/types/types"
 
-const Header = () => {
+const Header = ({scrollToSection, HomeRef} : HeaderProps) => {
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (HomeRef && HomeRef.current) {
+      HomeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="realtive fixed top-0 left-0 w-full z-40">
       <Image 
@@ -13,14 +21,14 @@ const Header = () => {
         alt="."
       />
       <div className="container mx-auto flex justify-between pt-6 items-center z-5">
-        <div className="z-5 ">
+        <a className="z-5 cursor-pointer" href="#" onClick={handleLogoClick}>
           <Image 
             width={140}
             height={130}
             src="/general/bec-logo.svg"
             alt="bec-logo"
           />
-        </div>
+        </a>
         <ul className="text-2xl font-base flex justify-between w-[600px] z-5">
           <li className="w-1/3 text-center">
             <Link href="#" className="inline-block transition-all duration-300 ease-in-out hover:scale-107">Про івент</Link>

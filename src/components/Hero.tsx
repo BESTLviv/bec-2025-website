@@ -1,15 +1,16 @@
 import { Audiowide } from 'next/font/google';
 import Image from 'next/image'
 import HeroButton from './ui/HeroButton';
+import React from 'react';
 
 const awide = Audiowide({
   weight: ['400'],
   subsets: ['latin'],
 });
 
-const Hero = () => {
+const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden" ref={ref}>
       <Image
         fill
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -48,6 +49,6 @@ const Hero = () => {
     </section>
 
   )
-}
+})
 
 export default Hero

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
 
@@ -30,15 +30,18 @@ const Slider = () => {
       </div>
       <div className="w-full px-0">
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay, FreeMode]}
           spaceBetween={20}
           slidesPerView={3}
           loop={true}
-          centeredSlides={true}
+          centeredSlides={false}
+          freeMode={true}
           autoplay={{
-            delay: 2000,
+            delay: 0,
             disableOnInteraction: false,
           }}
+          speed={2500}
+          grabCursor={true}
           className="my-5"
         >
           {photosDict.map((photo, index) => (
@@ -61,15 +64,19 @@ const Slider = () => {
       </div>
       <div className="w-full">
         <Swiper
-          modules={[Autoplay]}
+          modules={[Autoplay, FreeMode]}
           spaceBetween={20}
           slidesPerView={3}
           loop={true}
-          centeredSlides={true}
+          centeredSlides={false}
+          freeMode={true}
           autoplay={{
-            delay: 2000,
+            delay: 0,
             disableOnInteraction: false,
+            reverseDirection: true
           }}
+          speed={2500}
+          grabCursor={true}
           className="my-5"
         >
           {photosDict2.map((photo, index) => (
