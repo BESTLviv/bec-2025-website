@@ -1,4 +1,7 @@
 export interface HeaderProps {
 	scrollToSection?: React.RefObject<HTMLElement | null> | ((ref: React.RefObject<HTMLElement | null>) => void);
-	HomeRef: React.RefObject<HTMLElement | null>;
+	refs: {
+		HomeRef: React.RefObject<HTMLElement | null>;
+		AboutRef: React.RefObject<HTMLElement | null>;
+	}
 };
