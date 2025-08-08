@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='mt-10'>
+    <footer className='mt-10 bg-bec-bg'>
       <nav className='py-4 flex justify-between items-center mx-15'>
         <h2 className='font-semibold text-3xl'>2025</h2>
         <Image 

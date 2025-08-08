@@ -22,7 +22,7 @@ const Header = ({scrollToSection, refs} : HeaderProps) => {
         alt="."
       />
       <div className="container mx-auto flex justify-between pt-6 items-center z-5">
-        <a className="z-5 cursor-pointer" href="#" onClick={e => handleRefClick(e, refs.HomeRef)}>
+        <a className="z-5 cursor-pointer" href="/" onClick={e => handleRefClick(e, refs.HomeRef)}>
           <Image 
             width={140}
             height={130}
@@ -35,17 +35,17 @@ const Header = ({scrollToSection, refs} : HeaderProps) => {
             <Link href="#" className="inline-block transition-all duration-300 ease-in-out hover:scale-107" onClick={e => handleRefClick(e, refs.AboutRef)}>Про івент</Link>
           </li>
           <li className="w-1/3 text-center">
-            <Link href="#" className="inline-block transition-all duration-300 ease-in-out hover:scale-107">Партнери</Link>
+            <Link href="/partners/" className="inline-block transition-all duration-300 ease-in-out hover:scale-107">Партнери</Link>
           </li>
           <li className="w-1/3 text-center">
-            <Link href="#" className="inline-block transition-all duration-300 ease-in-out hover:scale-107">Організатори</Link>
+            <Link href="/organizers/" className="inline-block transition-all duration-300 ease-in-out hover:scale-107">Організатори</Link>
           </li>
         </ul>
         <div className="flex gap-2">
           <Link href="#">
             <HeaderButton text="Зареєструватися"/>
           </Link>
-          <Link href="#">
+          <Link href="/becomepartner/">
             <HeaderButton text="Стати партнером"/>
           </Link>
         </div>
