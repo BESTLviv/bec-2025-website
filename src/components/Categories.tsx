@@ -3,7 +3,7 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <section className='my-10'>
+    <section className='py-10 relative'>
       <div className="relative flex items-center justify-center flex-col space-y-2">
         <h2 className='font-semibold text-2xl'>Тема цьогорічних змагань:</h2>
         <h1 className='font-semibold text-3xl uppercase text-bec'>повоєнне відновлення</h1>
@@ -91,12 +91,6 @@ const Categories = () => {
           </div>
         </div>
       </div>
-      <Image
-        fill
-        src="/general/main-bg.png"
-        alt='.'
-        className='w-full absolute top-0 left-0 -z-10'
-      />
     </section>
   )
 }

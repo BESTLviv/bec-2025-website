@@ -5,12 +5,10 @@ import Bot from "@/components/Bot";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Whybec from "@/components/Whybec";
-
 import { useRef } from "react";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-
   const HomeRef = useRef<HTMLHeadingElement>(null);
   const AboutRef = useRef<HTMLHeadingElement>(null);
 
@@ -19,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div>
       <Header scrollToSection={scrollToSection} refs={{HomeRef, AboutRef}}/>
       <Hero ref={HomeRef}/>
       <About ref={AboutRef}/>

@@ -11,12 +11,28 @@
   --color-bec: #F5A020;
   --color-bec-transparent: rgba(245, 160, 32, 0.1);
 }
+
+@theme {
+  --animate-spinSlow: spin 10s linear infinite;
+  --animate-spinSlower: spin 15s linear infinite;
+  --animate-spinReverseSlow: spinReverse 10s linear infinite;
+}
+
 @keyframes gradientShift {
   0% {
     background-position: 200% 0;
   }
   100% {
     background-position: 0% 0;
+  }
+}
+
+@keyframes spinReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 
@@ -32,5 +48,10 @@ body {
 }
 
 .animate-gradient {
-  animation: gradientShift 8s linear infinite;
+  animation: gradientShift 5s linear infinite;
 }
+
+.pause-animation:hover * {
+  animation-play-state: paused !important;
+}
+

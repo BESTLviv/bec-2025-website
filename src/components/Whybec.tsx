@@ -22,7 +22,7 @@ const Whybec = () => {
             >
               <p className='text-bec'>Детальніше</p>
               <Image
-                src="/details.svg"
+                src="/general/details.svg"
                 width={22}
                 height={22}
                 alt='.'
@@ -52,7 +52,7 @@ const Whybec = () => {
             >
               <p className='text-bec'>Детальніше</p>
               <Image
-                src="/details.svg"
+                src="/general/details.svg"
                 width={22}
                 height={22}
                 alt='.'
