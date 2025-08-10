@@ -24,7 +24,7 @@ export default function AnimatedCircle() {
           height={150}
           alt="."
           src='/animate/hover.svg'
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-107 transition-all duration-250 ease-in-out"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-all duration-200 ease-in-out"
         />
       </Link>
       <Image

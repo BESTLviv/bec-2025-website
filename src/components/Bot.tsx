@@ -4,7 +4,7 @@ import AnimatedCircle from './ui/AnimatedCircle'
 
 const Bot = () => {
   return (
-    <section className='mt-40 h-[1120px] relative'>
+    <section className='pt-40 h-[1340px] relative'>
       <h1 className='uppercase text-center text-[52px] font-semibold'>BEST Engineering BOT</h1>
       <div className="mt-20 text-center relative">
         <p className='text-[22px] tracking-wider'>

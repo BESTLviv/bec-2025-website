@@ -4,7 +4,6 @@ import Categories from "@/components/Categories";
 import Bot from "@/components/Bot";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Whybec from "@/components/Whybec";
 import { useRef, useEffect } from "react";
 import Footer from "@/components/Footer";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -35,7 +34,6 @@ export default function Home() {
       <Hero ref={HomeRef} />
       <About ref={AboutRef} />
       <Categories />
-      <Whybec />
       <Bot />
       <Footer />
     </div>

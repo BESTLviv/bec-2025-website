@@ -21,7 +21,7 @@ export default function BecomePartner (){
         className='h-full w-full absolute top-0 left-0 -z-10'
       />
       <Header scrollToSection={scrollToSection} refs={{HomeRef, AboutRef}}/>
-      <div className="flex flex-col items-center justify-center h-[82vh] gap-20 pt-20">
+      <div className="flex flex-col items-center justify-center h-[88vh] gap-20 pt-20">
         <div className="flex gap-20">
           <Image 
             width={280}

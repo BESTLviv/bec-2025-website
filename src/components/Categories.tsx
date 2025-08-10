@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Whybec from './Whybec'
 
 const Categories = () => {
   return (
@@ -91,7 +92,7 @@ const Categories = () => {
           </div>
         </div>
       </div>
-
+      <Whybec />
       <Image 
         fill
         src='/general/bg-2.png'

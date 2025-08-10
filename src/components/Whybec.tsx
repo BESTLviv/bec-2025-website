@@ -3,7 +3,7 @@ import React from 'react'
 
 const Whybec = () => {
   return (
-    <div className='flex justify-around mb-10 mx-25'>
+    <div className='flex justify-around pt-20 pb-10 mx-25'>
 
       <div className="flex flex-col max-w-[480px]">
         <h1 className='text-[32px]'>
