@@ -4,7 +4,7 @@ import AnimatedCircle from './ui/AnimatedCircle'
 
 const Bot = () => {
   return (
-    <section className='mt-40 h-[1120px]'>
+    <section className='mt-40 h-[1120px] relative'>
       <h1 className='uppercase text-center text-[52px] font-semibold'>BEST Engineering BOT</h1>
       <div className="mt-20 text-center relative">
         <p className='text-[22px] tracking-wider'>
@@ -37,6 +37,14 @@ const Bot = () => {
           <AnimatedCircle />
         </div>
       </div>
+
+      <Image 
+        fill
+        src='/general/bg-3.png'
+        alt='.'
+        className='object-cover -z-11 h-[110vh]'
+      />
+
     </section>
   )
 }

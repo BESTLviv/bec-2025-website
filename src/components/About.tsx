@@ -4,7 +4,7 @@ import Slider from './Slider'
 
 const About = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <section className='relative pb-50' ref={ref}>
+    <section className='relative pb-50 min-h-screen z-0' ref={ref}>
       <div className='pt-25 flex flex-col justify-center w-full items-center'>
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl text-bec-white font-semibold relative p-10 max-w-[400px]">
@@ -53,8 +53,13 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
         </div>
 
         <Slider />
-        
       </div>
+      <Image 
+        fill
+        src='/general/bg-1.png'
+        alt='.'
+        className='object-cover -z-10'
+      />
     </section>
   )
 });

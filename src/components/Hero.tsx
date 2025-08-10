@@ -2,6 +2,7 @@ import { Audiowide } from 'next/font/google';
 import Image from 'next/image'
 import HeroButton from './ui/HeroButton';
 import React from 'react';
+import Link from 'next/link';
 
 const awide = Audiowide({
   weight: ['400'],
@@ -41,8 +42,12 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
             Інженери не чекають на майбутнє — вони його будують
           </p>
           <div className='flex gap-12 mt-10'>
-            <HeroButton text='ЗАРЕЄСТРУВАТИСЯ'/>
-            <HeroButton text='СТАТИ ПАРТНЕРОМ'/>
+            <Link href="#">
+              <HeroButton text='ЗАРЕЄСТРУВАТИСЯ'/>
+            </Link>
+            <Link href='/becomepartner'>
+              <HeroButton text='СТАТИ ПАРТНЕРОМ'/>
+            </Link>
           </div>
         </div>
       </div>
