@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`} cz-shortcut-listen="true">
+      <body className={`${inter.variable} antialiased overflow-x-hidden`} cz-shortcut-listen="true">
         {children}
       </body>
     </html>
