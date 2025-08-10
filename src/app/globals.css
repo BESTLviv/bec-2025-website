@@ -55,3 +55,10 @@ body {
   animation-play-state: paused !important;
 }
 
+.slider-glow {
+  filter: drop-shadow(0 0 10px var(--color-bec));
+}
+
+.slider-bg {
+  background: linear-gradient(to right, #070605 0%, #070605 37%, #5D3E07 100%);
+}
