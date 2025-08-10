@@ -7,7 +7,7 @@ interface HeaderButtonProps {
 
 const HeaderButton = ({ text }: HeaderButtonProps) => {
   return (
-    <button className="relative group cursor-pointer p-4 flex items-center justify-center text-base">
+    <button className="relative group cursor-pointer p-2 xl:p-4 flex items-center justify-center text-base">
       <Image
         width={170}
         height={50}
@@ -22,7 +22,7 @@ const HeaderButton = ({ text }: HeaderButtonProps) => {
         alt="button background hover"
         className="absolute top-2.5 left-0 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
       />
-      <span className="relative z-10 transition-transform duration-300 ease-in-out group-hover:scale-102">
+      <span className="xl:text-base relative z-10 transition-transform duration-300 ease-in-out group-hover:scale-102">
         {text}
       </span>
     </button>

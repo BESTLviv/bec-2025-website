@@ -34,7 +34,7 @@ export default function Partners (){
         className='h-full w-full absolute top-0 left-0 -z-10'
       />
       <Header scrollToSection={scrollToSection} refs={{HomeRef, AboutRef}}/>
-      <div className="flex flex-col items-center justify-center h-[120vh] gap-15 mt-20">
+      <div className="flex flex-col items-center justify-center h-[125vh] gap-15 pt-20">
 
         <h1 className='uppercase font-semibold text-5xl'>Нас підтримали</h1>
 

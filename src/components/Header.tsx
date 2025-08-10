@@ -27,17 +27,19 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
   };
 
   return (
-    <header className="realtive fixed top-0 left-0 w-full z-40">
+    <header className="realtive fixed top-0 left-0 w-full z-40 h-[110px]">
+
       <Image
         width={1510}
         height={140}
         src="/header/header.svg"
-        className="w-full absolute z-3"
+        className="w-full absolute z-10"
         alt="."
       />
-      <div className="container mx-auto flex justify-between pt-6 items-center z-5">
-        <a
-          className="z-5 cursor-pointer"
+
+      <div className="container mx-auto flex justify-between pt-3 xl:pt-6 items-center z-20 px-10">
+        <Link
+          className="z-20 cursor-pointer"
           href="/"
           onClick={(e) => handleNavClick(e, "home")}
         >
@@ -46,9 +48,10 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             height={130}
             src="/general/bec-logo.svg"
             alt="bec-logo"
+            className="w-[120px] 15xl:w-[140px] h-[70px]"
           />
-        </a>
-        <ul className="text-2xl font-base flex justify-between w-[600px] z-5">
+        </Link>
+        <ul className="text-xl 15xl:text-2xl font-base flex justify-between w-[600px] z-20">
           <li className="w-1/3 text-center">
             <Link
               href="#"

@@ -36,6 +36,10 @@
   }
 }
 
+@theme {
+  --breakpoint-15xl: 1440px;
+}
+
 body {
   background: var(--color-bec-bg);
   color: var(--color-bec-white);
@@ -43,7 +47,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1840px;
   margin: 0 auto;
 }
 
@@ -61,4 +65,9 @@ body {
 
 .slider-bg {
   background: linear-gradient(to right, #070605 0%, #070605 37%, #5D3E07 100%);
+}
+
+.header-blur {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
 }
