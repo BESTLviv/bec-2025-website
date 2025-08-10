@@ -3,7 +3,6 @@ import Link from "next/link";
 import HeaderButton from "./ui/HeaderButton";
 import { HeaderProps } from "@/types/types";
 import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
 
 const Header = ({ scrollToSection, refs }: HeaderProps) => {
   const router = useRouter();
