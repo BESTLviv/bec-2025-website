@@ -22,7 +22,7 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
             <div className="p-4 bg-bec-transparent border-1 border-bec max-w-3xl">
               <p>
                 <span className='text-bec font-semibold'>BEC</span> – змагання, які мають на меті дати можливість молодим інженерам продемонструвати 
-                свої знання, командну роботу, практичні та теоретичні навички для розв'язання задач, які є реальними викликами сучасності. 
+                свої знання, командну роботу, практичні та теоретичні навички для розв&apos;язання задач, які є реальними викликами сучасності. 
               </p>
               <p className='mt-5'>
                 Учасники зможуть проявити себе у двох категоріях: <span className='text-bec font-semibold'>Team Design</span> (TD) 
@@ -46,7 +46,7 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
             <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec"/>
             <div className="p-4 bg-bec-transparent border-1 border-bec max-w-3xl">
               <p>
-                Сформувати спільноту компетентних і вмотивованих студентів-інженерів, готових розв'язувати нестандартні задачі.
+                Сформувати спільноту компетентних і вмотивованих студентів-інженерів, готових розв&apos;язувати нестандартні задачі.
               </p>
             </div>
           </div>
