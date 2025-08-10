@@ -27,12 +27,6 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
     }
   };
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    
-  }
-
   return (
     <header className="realtive fixed top-0 left-0 w-full z-40 h-[110px]">
 
