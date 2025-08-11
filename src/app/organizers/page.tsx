@@ -81,13 +81,14 @@ export default function Organizers (){
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 } // чітко 3 на великих екранах
           }}
+          className='swiper-slide-prev:pt-[65px]'
         >
           {organizersArr.map((organizer) => (
             <SwiperSlide
               key={organizer.key}
               className="
                 max-w-[300px] max-h-[680px] flex flex-col items-center justify-center text-center h-full pt-2
-                swiper-slide-prev:pt-[65px]
+                
               "
             >
               <Image
