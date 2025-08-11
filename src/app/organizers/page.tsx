@@ -16,7 +16,7 @@ export default function Organizers (){
     {name: "Назар Дʼяченко", position: "Logistics Responsible", src: "/organizers/nazar.png", key: '5' },
     {name: "Соломія Данилишин", position: "Content Responsible (ID)", src: "/organizers/sol-id.png", key: '6' },
     {name: "Софія Курдибан", position: "PR Responsible ", src: "/organizers/sofia.png", key: '7' },
-    {name: "Владислав Присяжнюк", position: "IT Responsible", src: "/organizers/vlad.png", key: '8' },
+    {name: "Влад Присяжнюк", position: "IT Responsible", src: "/organizers/vlad.png", key: '8' },
     {name: "Руслан Явір", position: "Mentor", src: "/organizers/ruslan.png", key: '9' },
     {name: "Христина Паращук", position: "DS Responsible", src: "/organizers/kris.png", key: '10' },
     {name: "Денис Браздецький", position: "Main Organizer", src: "/organizers/denys.png", key: '11' },
@@ -83,18 +83,41 @@ export default function Organizers (){
           }}
         >
           {organizersArr.map((organizer) => (
-            <SwiperSlide key={organizer.key} className="max-w-[400px] max-h-[580px] flex flex-col items-center justify-center text-center h-full">
+            <SwiperSlide
+              key={organizer.key}
+              className="
+                max-w-[300px] max-h-[680px] flex flex-col items-center justify-center text-center h-full pt-2
+                swiper-slide-prev:pt-[65px]
+              "
+            >
               <Image
-                width={370}
-                height={430}
+                width={300}
+                height={417}
                 alt='.'
                 src={organizer.src}
-                className='slider-glow'
+                className='
+                slider-glow w-[300px] h-[417px] mx-auto
+                [.swiper-slide-prev_&]:h-[350px] [.swiper-slide-prev_&]:w-[250px]
+                [.swiper-slide-next_&]:h-[350px] [.swiper-slide-next_&]:w-[250px]
+                '
               />
-              <div className="p-3 text-center z-10 border-2 border-bec slider-bg">
-                <h1 className='font-bold text-2xl'>{organizer.name}</h1>
-                <div className="w-50 h-0.5 bg-bec mx-auto my-2"></div>
-                <h1 className='font-bold text-2xl'>{organizer.position}</h1>
+              <div className="
+                flex flex-col items-center justify-center p-3 text-center z-10 border-2 
+                border-bec slider-bg h-[142px] 
+                [_.swiper-slide-prev_&]:h-[100px] 
+                [_.swiper-slide-next_&]:h-[100px] 
+              ">
+                <h1 className='
+                  font-bold text-2xl 
+                  [_.swiper-slide-prev_&]:hidden 
+                  [_.swiper-slide-next_&]:hidden
+                '>{organizer.name}</h1>
+                <div className="
+                  w-50 h-0.5 bg-bec mx-auto my-2 
+                  [_.swiper-slide-prev_&]:hidden 
+                  [_.swiper-slide-next_&]:hidden
+                "/>
+                <h1 className='font-bold text-[22px]'>{organizer.position}</h1>
               </div>
             </SwiperSlide>
           ))}

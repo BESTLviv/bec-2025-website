@@ -13,14 +13,14 @@ const HeaderButton = ({ text }: HeaderButtonProps) => {
         height={50}
         src="/header/btn.svg"
         alt="button background"
-        className="absolute 2xl:top-3 xl:top-2.5 top-1.5 2xl:left-2 left-0 transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0"
+        className="absolute 2xl:top-3 xl:top-2.5 top-1.5 2xl:left-0.5 left-0 transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0"
       />
       <Image
         width={180}
         height={50}
         src="/header/btn-hover.svg"
         alt="button background hover"
-        className="absolute 2xl:top-3 xl:top-2.5 top-1.5 2xl:left-2 left-0 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+        className="absolute 2xl:top-3 xl:top-2.5 top-1.5 2xl:left-0.5 left-0 transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
       />
       <span className="2xl:text-[20px] 15xl:text-base text-[14px] relative z-10 transition-transform duration-300 ease-in-out group-hover:scale-102">
         {text}
