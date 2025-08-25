@@ -19,8 +19,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BEC",
+  title: "BEC 2025 — BEST Engineering Competition",
   description: "",
+  icons: {
+    icon: "/Bec-logo.svg",
+  },
 };
 
 export default function RootLayout({
