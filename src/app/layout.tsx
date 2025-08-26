@@ -1,28 +1,18 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: [
-    "100",
-    "200",
-    "300",
-    "400",
-    "500",
-    "600",
-    "700",
-    "800",
-    "900",
-  ],
+  variable: '--font-inter',
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
-  title: "BEC 2025 — BEST Engineering Competition",
-  description: "",
+  title: 'BEC 2025 — BEST Engineering Competition',
+  description: '',
   icons: {
-    icon: "/Bec-logo.svg",
+    icon: '/Bec-logo.svg',
   },
 };
 
@@ -33,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased overflow-x-hidden`} cz-shortcut-listen="true">
+      <body
+        className={`${inter.variable} antialiased overflow-x-hidden relative`}
+        cz-shortcut-listen="true"
+      >
         {children}
       </body>
     </html>
