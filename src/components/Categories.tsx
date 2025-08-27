@@ -153,7 +153,7 @@ const Categories = () => {
         fill
         src="/general/bg-2.png"
         alt="."
-        className="object-cover -z-11"
+        className="object-cover -z-11 opacity-70"
       />
     </section>
   );

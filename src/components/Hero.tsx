@@ -1,5 +1,5 @@
 import { Audiowide } from 'next/font/google';
-import Image from 'next/image'
+import Image from 'next/image';
 import HeroButton from './ui/HeroButton';
 import React from 'react';
 import Link from 'next/link';
@@ -14,11 +14,11 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
     <section className="relative w-full h-screen overflow-hidden" ref={ref}>
       <Image
         fill
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         alt="hero background"
         src="/hero/hero-bg.svg"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-90"
       />
-      
+
       <div className="container mx-auto px-4 h-full pt-50">
         <div className="z-10 max-w-[1000px] space-y-3">
           <p
@@ -27,7 +27,7 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
             BEST Engineering Competition
           </p>
           <div className="flex gap-2 items-center ">
-            <Image 
+            <Image
               width={45}
               height={30}
               className="flex items-center justify-center"
@@ -38,24 +38,23 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
               24–28 жовтня
             </p>
           </div>
-          <p className='text-3xl max-w-[900px]'>
+          <p className="text-3xl max-w-[900px]">
             Інженери не чекають на майбутнє — вони його будують
           </p>
-          <div className='flex gap-12 mt-10'>
+          <div className="flex gap-12 mt-10">
             <Link href="#">
-              <HeroButton text='ЗАРЕЄСТРУВАТИСЯ'/>
+              <HeroButton text="ЗАРЕЄСТРУВАТИСЯ" />
             </Link>
-            <Link href='/becomepartner'>
-              <HeroButton text='СТАТИ ПАРТНЕРОМ'/>
+            <Link href="/becomepartner">
+              <HeroButton text="СТАТИ ПАРТНЕРОМ" />
             </Link>
           </div>
         </div>
       </div>
     </section>
-
-  )
-})
+  );
+});
 
 Hero.displayName = 'Hero';
 
-export default Hero
+export default Hero;

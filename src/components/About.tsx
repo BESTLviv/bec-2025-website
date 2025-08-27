@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import React from 'react'
-import Slider from './Slider'
+import Image from 'next/image';
+import React from 'react';
+import Slider from './Slider';
 
 const About = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <section className='relative pb-50 min-h-screen z-0' ref={ref}>
-      <div className='pt-25 flex flex-col justify-center w-full items-center'>
+    <section className="relative pb-50 min-h-screen z-0" ref={ref}>
+      <div className="pt-25 flex flex-col justify-center w-full items-center">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl text-bec-white font-semibold relative p-10 max-w-[400px]">
             ПРО ІВЕНТ
@@ -13,20 +13,28 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
               width={20}
               height={20}
               src="/about/top-el.svg"
-              alt='.'
-              className='w-full absolute top-7.5 left-0'
+              alt="."
+              className="w-full absolute top-7.5 left-0"
             />
           </h2>
           <div className="relative text-2xl">
-            <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec"/>
+            <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec" />
             <div className="p-4 bg-bec-transparent border-1 border-bec max-w-3xl">
               <p>
-                <span className='text-bec font-semibold'>BEC</span> – змагання, які мають на меті дати можливість молодим інженерам продемонструвати 
-                свої знання, командну роботу, практичні та теоретичні навички для розв&apos;язання задач, які є реальними викликами сучасності. 
+                <span className="text-bec font-semibold">BEC</span> – змагання,
+                які мають на меті дати можливість молодим інженерам
+                продемонструвати свої знання, командну роботу, практичні та
+                теоретичні навички для розв&apos;язання задач, які є реальними
+                викликами сучасності.
               </p>
-              <p className='mt-5'>
-                Учасники зможуть проявити себе у двох категоріях: <span className='text-bec font-semibold'>Team Design</span> (TD) 
-                та <span className='text-bec font-semibold'>Innovative Design</span> (ID).
+              <p className="mt-5">
+                Учасники зможуть проявити себе у двох категоріях:{' '}
+                <span className="text-bec font-semibold">Team Design</span> (TD)
+                та{' '}
+                <span className="text-bec font-semibold">
+                  Innovative Design
+                </span>{' '}
+                (ID).
               </p>
             </div>
           </div>
@@ -38,15 +46,17 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
               width={20}
               height={20}
               src="/about/top-el.svg"
-              alt='.'
-              className='w-full absolute top-7.5 left-0'
+              alt="."
+              className="w-full absolute top-7.5 left-0"
             />
           </h2>
           <div className="relative text-2xl">
-            <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec"/>
+            <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec" />
             <div className="p-4 bg-bec-transparent border-1 border-bec max-w-3xl">
               <p>
-                Сформувати спільноту компетентних і вмотивованих студентів-інженерів, готових розв&apos;язувати нестандартні задачі.
+                Сформувати спільноту компетентних і вмотивованих
+                студентів-інженерів, готових розв&apos;язувати нестандартні
+                задачі.
               </p>
             </div>
           </div>
@@ -54,16 +64,16 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
 
         <Slider />
       </div>
-      <Image 
+      <Image
         fill
-        src='/general/bg-1.png'
-        alt='.'
-        className='object-cover -z-10'
+        src="/general/bg-1.png"
+        alt="."
+        className="object-cover -z-10 opacity-70"
       />
     </section>
-  )
+  );
 });
 
-About.displayName = 'About'
+About.displayName = 'About';
 
-export default About
+export default About;

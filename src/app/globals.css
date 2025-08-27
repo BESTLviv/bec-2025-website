@@ -42,7 +42,7 @@
 }
 
 body {
-  background: var(--color-bec-bg);
+  background: #020202;
   color: var(--color-bec-white);
   overflow-x: hidden;
 }

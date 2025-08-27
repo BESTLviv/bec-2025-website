@@ -99,7 +99,7 @@ const Whybec = () => {
             </p>
             <div
               className="flex gap-1 cursor-pointer mr-80"
-              // onClick={}
+              onClick={() => setOpenTooltip('partner')}
             >
               <p className="text-bec">Детальніше</p>
               <Image
@@ -112,6 +112,48 @@ const Whybec = () => {
           </div>
           <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/3"></div>
         </div>
+        {openTooltip === 'partner' && (
+          <ModalWindow onClose={() => setOpenTooltip(null)}>
+            <div className="bg-[#181003] text-becwhite text-sm border-3 border-bec p-6 w-full shadow-lg relative z-10">
+              <button
+                onClick={() => setOpenTooltip(null)}
+                className="absolute -top-1 right-1 540px:top-1 540px:right-3 text-white text-4xl cursor-pointer font-extralight hover:scale-125 transition-all ease-in"
+                aria-label="Close tooltip"
+              >
+                ×
+              </button>
+              {partnersAdditional.map(item => (
+                <div key={item.src} className="mb-2">
+                  <h2 className="text-xl text-bec font-bold mb-3 flex gap-2 items-center">
+                    <Image
+                      width={24}
+                      height={24}
+                      src={item.src}
+                      alt={item.title}
+                    />
+                    {item.title}
+                  </h2>
+                  <p className="text-xs md:text-[16px]">{item.text}</p>
+                  <hr
+                    className={`mt-2 bg-[#676565] 
+                      ${
+                        item.title === 'Твоя ідея – майбутній стартап'
+                          ? 'hidden'
+                          : ''
+                      }
+                    `}
+                  />
+                </div>
+              ))}
+              <Link
+                href="/becomepartner/"
+                className="w-full flex justify-center"
+              >
+                <ModalButton text="Стати Партнером" />
+              </Link>
+            </div>
+          </ModalWindow>
+        )}
       </div>
     </div>
   );

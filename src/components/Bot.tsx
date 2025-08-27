@@ -53,7 +53,7 @@ const Bot = () => {
         fill
         src="/general/bg-3.png"
         alt="."
-        className="object-cover -z-11 h-[110vh]"
+        className="object-cover -z-11 h-[110vh] opacity-70"
       />
     </section>
   );
