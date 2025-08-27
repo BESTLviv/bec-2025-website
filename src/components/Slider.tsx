@@ -7,20 +7,19 @@ import 'swiper/css';
 import Image from 'next/image';
 
 const Slider = () => {
-
   const photosDict = [
-    { src: "/slider/el-1.jpg", alt: "slide1" },
-    { src: "/slider/el-2.jpg", alt: "slide2" },
-    { src: "/slider/el-3.jpg", alt: "slide3" },
-    { src: "/slider/el-4.jpg", alt: "slide4" },
-    { src: "/slider/el-5.jpg", alt: "slide5" },
+    { src: '/slider/el-1.jpg', alt: 'slide1' },
+    { src: '/slider/el-2.jpg', alt: 'slide2' },
+    { src: '/slider/el-3.jpg', alt: 'slide3' },
+    { src: '/slider/el-4.jpg', alt: 'slide4' },
+    { src: '/slider/el-5.jpg', alt: 'slide5' },
   ];
   const photosDict2 = [
-    { src: "/slider/el-6.jpg", alt: "slide6" },
-    { src: "/slider/el-7.jpg", alt: "slide7" },
-    { src: "/slider/el-8.jpg", alt: "slide8" },
-    { src: "/slider/el-9.jpg", alt: "slide9" },
-    { src: "/slider/el-10.jpg", alt: "slide10" },
+    { src: '/slider/el-6.jpg', alt: 'slide6' },
+    { src: '/slider/el-7.jpg', alt: 'slide7' },
+    { src: '/slider/el-8.jpg', alt: 'slide8' },
+    { src: '/slider/el-9.jpg', alt: 'slide9' },
+    { src: '/slider/el-10.jpg', alt: 'slide10' },
   ];
 
   return (
@@ -33,6 +32,14 @@ const Slider = () => {
           modules={[Autoplay, FreeMode]}
           spaceBetween={20}
           slidesPerView={3}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+            },
+            800: {
+              slidesPerView: 3,
+            },
+          }}
           loop={true}
           centeredSlides={false}
           freeMode={true}
@@ -40,13 +47,13 @@ const Slider = () => {
             delay: 0,
             disableOnInteraction: false,
           }}
-          speed={2500}
+          speed={5000}
           grabCursor={true}
           className="my-5"
         >
           {photosDict.map((photo, index) => (
             <SwiperSlide key={index}>
-              <div className="w-[455px] h-[300px] flex items-center justify-center mx-auto">
+              <div className="w-[350px] md:w-[250px] lg:w-[320px] xl:w-[455px] h-[220px] md:h-[180px] lg:h-[250px] xl:h-[300px] flex items-center justify-center mx-auto">
                 <Image
                   className="object-cover"
                   width={415}
@@ -66,22 +73,33 @@ const Slider = () => {
         <Swiper
           modules={[Autoplay, FreeMode]}
           spaceBetween={20}
-          slidesPerView={3}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+            },
+            800: {
+              slidesPerView: 3,
+            },
+          }}
           loop={true}
           centeredSlides={false}
-          freeMode={true}
+          freeMode={{
+            enabled: true,
+            momentum: false,
+          }}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            reverseDirection: true
+            reverseDirection: true,
+            pauseOnMouseEnter: false,
           }}
-          speed={2500}
+          speed={5000}
           grabCursor={true}
           className="my-5"
         >
           {photosDict2.map((photo, index) => (
             <SwiperSlide key={index}>
-              <div className="w-[455px] h-[300px] flex items-center justify-center mx-auto">
+              <div className="w-[350px] md:w-[250px] lg:w-[320px] xl:w-[455px] h-[220px] md:h-[180px] lg:h-[250px] xl:h-[300px] flex items-center justify-center mx-auto">
                 <Image
                   className="object-cover"
                   width={415}

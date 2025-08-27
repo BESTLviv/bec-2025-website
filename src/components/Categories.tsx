@@ -12,10 +12,11 @@ const fadeUp = {
 const Categories = () => {
   return (
     <section className="py-10 relative">
-      {/* Title Section */}
       <div className="relative flex items-center justify-center flex-col space-y-2 z-9">
-        <h2 className="font-semibold text-2xl">Тема цьогорічних змагань:</h2>
-        <h1 className="font-semibold text-3xl uppercase text-bec">
+        <h2 className="font-semibold text-base md:text-xl lg:text-2xl">
+          Тема цьогорічних змагань:
+        </h2>
+        <h1 className="font-semibold text-xl md:text-2xl lg:text-3xl uppercase text-bec">
           повоєнне відновлення
         </h1>
         <Image
@@ -23,12 +24,18 @@ const Categories = () => {
           height={20}
           src="/categories/topic.svg"
           alt="."
-          className="w-full absolute -top-28 left-0 -z-1"
+          className="w-full absolute hidden sm:block xl:-top-24 2xl:-top-28 left-0 -z-1"
+        />
+        <Image
+          width={20}
+          height={20}
+          src="/categories/topic-phone.svg"
+          alt="."
+          className="w-[380px] absolute sm:hidden xl:-top-24 2xl:-top-28 left-1/2 -translate-x-1/2 -z-1"
         />
       </div>
 
-      {/* Categories */}
-      <div className="mt-50 flex flex-col items-center z-9">
+      <div className="mt-20 md:mt-50 flex flex-col items-center z-9">
         <h1 className="text-5xl mb-10 font-semibold">КАТЕГОРІЇ</h1>
 
         <motion.div
@@ -39,7 +46,6 @@ const Categories = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          {/* Team Design */}
           <motion.div
             className="flex flex-col max-w-[520px] gap-7"
             variants={fadeUp}
@@ -74,7 +80,6 @@ const Categories = () => {
             </div>
           </motion.div>
 
-          {/* Innovative Design */}
           <motion.div
             className="flex flex-col max-w-[520px] gap-7"
             variants={fadeUp}
@@ -111,7 +116,6 @@ const Categories = () => {
           </motion.div>
         </motion.div>
 
-        {/* Interaction */}
         <motion.div
           className="flex flex-col max-w-[520px] gap-7 mt-20"
           variants={fadeUp}

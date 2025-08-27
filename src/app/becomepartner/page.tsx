@@ -23,7 +23,7 @@ export default function BecomePartner() {
       <Header scrollToSection={scrollToSection} refs={{ HomeRef, AboutRef }} />
       <div className="flex flex-col items-center justify-center h-[88vh] gap-20 pt-20">
         <h1 className="uppercase font-semibold text-3xl sm:text-4xl md:text-5xl">
-          ЗВ'ЯЖІТЬСЯ З НАМИ
+          ЗВ&apos;ЯЖІТЬСЯ З НАМИ
         </h1>
         <div className="flex gap-5 sm:gap-10 md:gap-20">
           <Image
