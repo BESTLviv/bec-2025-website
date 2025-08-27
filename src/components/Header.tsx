@@ -3,7 +3,7 @@ import Link from 'next/link';
 import HeaderButton from './ui/HeaderButton';
 import { HeaderProps } from '@/types/types';
 import { useRouter, usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = ({ scrollToSection, refs }: HeaderProps) => {
   const router = useRouter();
@@ -22,6 +22,14 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
       router.push(section === 'about' ? '/?scroll=about' : '/');
     }
   };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = '';
+    }
+  }, [menuOpen]);
 
   return (
     <header className="fixed top-0 left-0 w-full z-10 h-[110px]">

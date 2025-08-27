@@ -19,10 +19,10 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
         className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-90"
       />
 
-      <div className="container mx-auto px-4 h-full pt-50">
+      <div className="container mx-auto px-4 h-full pt-45 sm:pt-30 md:pt-50">
         <div className="z-10 max-w-[1000px] space-y-3">
           <p
-            className={`text-[80px] uppercase font-bold tracking-wide leading-[1.0] ${awide.className}`}
+            className={`text-[45px] sm:text-[70px] lg:text-[80px] uppercase font-bold tracking-wide leading-[1.0] ${awide.className}`}
           >
             BEST Engineering Competition
           </p>
@@ -30,18 +30,18 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
             <Image
               width={45}
               height={30}
-              className="flex items-center justify-center"
               alt="hero background"
               src="/hero/calendar.svg"
+              className="w-[30px] lg:w-[45px] flex items-center justify-center"
             />
-            <p className="text-4xl text-bec font-semibold tracking-wider pb-2">
+            <p className="text-[26px] sm:text-3xl lg:text-4xl text-bec font-semibold tracking-wider pb-1 lg:pb-2">
               24–28 жовтня
             </p>
           </div>
-          <p className="text-3xl max-w-[900px]">
+          <p className="text-2xl sm:text-[28px] lg:text-3xl max-w-[900px]">
             Інженери не чекають на майбутнє — вони його будують
           </p>
-          <div className="flex gap-12 mt-10">
+          <div className="flex-col justify-center items-center md:flex-row flex gap-4 md:gap-12 mt-5 md:mt-20 lg:mt-10">
             <Link href="#">
               <HeroButton text="ЗАРЕЄСТРУВАТИСЯ" />
             </Link>

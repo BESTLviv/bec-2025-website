@@ -5,21 +5,21 @@ import Slider from './Slider';
 const About = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <section className="relative pb-50 min-h-screen z-0" ref={ref}>
-      <div className="pt-25 flex flex-col justify-center w-full items-center">
+      <div className="pt-25 flex flex-col gap-15 sm:gap-0 justify-center w-full items-center">
         <div className="flex flex-col justify-center items-center">
-          <h2 className="text-4xl text-bec-white font-semibold relative p-10 max-w-[400px]">
+          <h2 className="text-[28px] md:text-3xl lg:text-4xl text-bec-white font-semibold relative p-10 max-w-[400px]">
             ПРО ІВЕНТ
             <Image
               width={20}
               height={20}
               src="/about/top-el.svg"
               alt="."
-              className="w-full absolute top-7.5 left-0"
+              className="w-full absolute top-8 md:top-7.5 left-0"
             />
           </h2>
-          <div className="relative text-2xl">
-            <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec" />
-            <div className="p-4 bg-bec-transparent border-1 border-bec max-w-3xl">
+          <div className="relative text-xl lg:text-2xl">
+            <div className="absolute -left-3 sm:-left-5 top-0 h-full w-1 border-1 bg-bec border-bec" />
+            <div className="p-4 bg-bec-transparent border-1 border-bec max-w-[340px] sm:max-w-xl md:max-w-3xl">
               <p>
                 <span className="text-bec font-semibold">BEC</span> – змагання,
                 які мають на меті дати можливість молодим інженерам
@@ -40,19 +40,19 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <h2 className="text-4xl text-bec-white font-semibold relative p-10 max-w-[400px]">
+          <h2 className="text-[28px] md:text-3xl lg:text-4xl text-bec-white font-semibold relative p-10 max-w-[400px]">
             НАША ЦІЛЬ
             <Image
               width={20}
               height={20}
               src="/about/top-el.svg"
               alt="."
-              className="w-full absolute top-7.5 left-0"
+              className="w-full absolute top-8 md:top-7.5 left-0"
             />
           </h2>
-          <div className="relative text-2xl">
-            <div className="absolute -left-5 top-0 h-full w-1 border-1 bg-bec border-bec" />
-            <div className="p-4 bg-bec-transparent border-1 border-bec max-w-3xl">
+          <div className="relative text-xl lg:text-2xl">
+            <div className="absolute -left-3 sm:-left-5 top-0 h-full w-1 border-1 bg-bec border-bec" />
+            <div className="p-4 bg-bec-transparent border-1 border-bec max-w-[340px] sm:max-w-xl md:max-w-3xl">
               <p>
                 Сформувати спільноту компетентних і вмотивованих
                 студентів-інженерів, готових розв&apos;язувати нестандартні
