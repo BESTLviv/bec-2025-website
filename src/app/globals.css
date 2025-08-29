@@ -17,6 +17,7 @@
   --animate-spinSlow: spin 10s linear infinite;
   --animate-spinSlower: spin 15s linear infinite;
   --animate-spinReverseSlow: spinReverse 10s linear infinite;
+  --breakpoint-3xl: 1677px;
 }
 
 @keyframes gradientShift {

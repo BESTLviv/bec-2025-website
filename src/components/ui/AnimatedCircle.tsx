@@ -28,9 +28,9 @@ export default function AnimatedCircle() {
         height={465}
         alt="."
         src="/animate/anim2.svg"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spinSlower "
+        className="w-[280px] h-[280px] sm:w-[465px] sm:h-[465px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spinSlower "
       />
-      <div className="w-[320px] h-[320px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spinReverseSlow ">
+      <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spinReverseSlow ">
         <Image fill alt="." src="/animate/anim3.png" />
       </div>
     </div>

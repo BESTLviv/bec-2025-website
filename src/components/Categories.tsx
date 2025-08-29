@@ -36,7 +36,7 @@ const Categories = () => {
       </div>
 
       <div className="mt-20 md:mt-50 flex flex-col items-center z-9">
-        <h1 className="text-5xl mb-10 font-semibold">КАТЕГОРІЇ</h1>
+        <h1 className="text-4xl md:text-5xl mb-10 font-semibold">КАТЕГОРІЇ</h1>
 
         <motion.div
           className="flex gap-20 flex-wrap justify-center"
@@ -47,14 +47,14 @@ const Categories = () => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <motion.div
-            className="flex flex-col max-w-[520px] gap-7"
+            className="flex flex-col max-w-[520px] gap-7 px-2 sm:px-0"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <h1 className="text-bec-bg text-[32px] relative px-0 font-bold text-center">
+            <h1 className="text-bec-bg text-[28px] sm:text-[32px] relative px-0 font-bold text-center">
               Team Design
               <Image
                 fill
@@ -64,7 +64,7 @@ const Categories = () => {
               />
             </h1>
             <div className="relative border border-bec p-[10px]">
-              <div className="bg-bec-transparent p-4 space-y-12 text-[18px]">
+              <div className="bg-bec-transparent p-2 sm:p-4 space-y-8 sm:space-y-19 text-[16px] sm:text-[18px]">
                 <p>
                   Практична інженерна категорія, у якій команди студентів
                   розв’язують реальні задачі у сфері embedded-систем, IoT,
@@ -81,14 +81,14 @@ const Categories = () => {
           </motion.div>
 
           <motion.div
-            className="flex flex-col max-w-[520px] gap-7"
+            className="flex flex-col max-w-[520px] gap-7 px-2 sm:px-0"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <h1 className="text-bec-bg text-[32px] relative px-0 font-bold text-center">
+            <h1 className="text-bec-bg text-[28px] sm:text-[32px] relative px-0 font-bold text-center">
               Innovative Design
               <Image
                 fill
@@ -98,7 +98,7 @@ const Categories = () => {
               />
             </h1>
             <div className="relative border border-bec p-[10px]">
-              <div className="bg-bec-transparent p-4 space-y-5 text-[18px]">
+              <div className="bg-bec-transparent p-2 sm:p-4 space-y-8 sm:space-y-12 text-[16px] sm:text-[18px]">
                 <p>
                   Концептуальна категорія для креативних інженерних ідей:
                   команди пропонують нові чи вдосконалені розв&apos;язання
@@ -117,14 +117,14 @@ const Categories = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col max-w-[520px] gap-7 mt-20"
+          className="flex flex-col max-w-[520px] gap-7 px-2 sm:px-0 mt-20"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h1 className="text-bec-bg text-[32px] relative px-0 font-bold text-center">
+          <h1 className="text-bec-bg text-2xl sm:text-[32px] relative px-0 font-bold text-center">
             Взаємодія між категоріями
             <Image
               fill
@@ -134,7 +134,7 @@ const Categories = () => {
             />
           </h1>
           <div className="relative border border-bec p-[10px]">
-            <div className="bg-bec-transparent p-4 space-y-5 text-[18px]">
+            <div className="bg-bec-transparent p-2 sm:p-4 space-y-8 sm:space-y-12 text-[16px] sm:text-[18px]">
               <p>
                 В один із днів проведення змагань команди категорії{' '}
                 <span className="font-semibold">Innovative Design</span>{' '}

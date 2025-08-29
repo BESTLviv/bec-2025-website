@@ -12,9 +12,9 @@ const Whybec = () => {
   >(null);
 
   return (
-    <div className="flex-col lg:flex-row flex justify-around pt-20 pb-10 mx-25 z-9">
-      <div className="flex flex-col max-w-[480px]">
-        <h1 className="text-[32px]">
+    <div className="gap-10 xl:gap-0 flex justify-around mt-30 xl:mt-20 pb-10 px-3 md:mx-25 z-9 flex-wrap">
+      <div className="flex flex-col max-w-[350px] md:max-w-[480px]">
+        <h1 className="text-2xl md:text-[32px]">
           ЧОМУ ПОТРІБНО ОБРАТИ{' '}
           <span className="font-semibold italic text-bec">BEC</span>, ЯКЩО ВИ -{' '}
           <span className="font-semibold text-bec">КОМПАНІЯ</span>
@@ -82,10 +82,10 @@ const Whybec = () => {
         )}
       </div>
 
-      <div className="h-[346px] w-0.5 border bg-bec border-bec" />
+      <div className="hidden xl:block h-[346px] w-0.5 border bg-bec border-bec" />
 
-      <div className="flex flex-col max-w-[480px]">
-        <h1 className="text-[32px]">
+      <div className="flex flex-col max-w-[350px] md:max-w-[480px]">
+        <h1 className="text-2xl md:text-[32px]">
           ЧОМУ ПОТРІБНО ОБРАТИ{' '}
           <span className="font-semibold italic text-bec">BEC</span>, ЯКЩО ТИ -{' '}
           <span className="font-semibold text-bec">СТУДЕНТ</span>
