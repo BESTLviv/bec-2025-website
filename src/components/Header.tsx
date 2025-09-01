@@ -32,7 +32,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
   }, [menuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-10 h-[110px]">
+    <header className="fixed top-0 left-0 w-full z-10 h-[100px] xl:h-[125px] backdrop-blur border-b-1 border-bec">
       {/* <Image
         width={110}
         height={140}
