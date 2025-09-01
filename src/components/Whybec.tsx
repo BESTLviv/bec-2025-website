@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import ModalWindow from './ui/ModalWindow';
-
 import { studentsAdditional, partnersAdditional } from '@/data/data';
 import Link from 'next/link';
 import ModalButton from './ui/ModalButton';
@@ -33,8 +32,8 @@ const Whybec = () => {
               <p className="text-bec">Детальніше</p>
               <Image
                 src="/general/details.svg"
-                width={22}
-                height={22}
+                width={42}
+                height={42}
                 alt="."
               />
             </div>
@@ -51,32 +50,34 @@ const Whybec = () => {
               >
                 ×
               </button>
-              {studentsAdditional.map(item => (
-                <div key={item.src} className="mb-2">
-                  <h2 className="text-xl text-bec font-bold mb-3 flex gap-2 items-center">
-                    <Image
-                      width={24}
-                      height={24}
-                      src={item.src}
-                      alt={item.title}
+              <div className="max-h-[550px] overflow-y-auto">
+                {studentsAdditional.map(item => (
+                  <div key={item.src} className="mb-4">
+                    <h2 className="text-[18px] text-bec font-bold mb-3 flex gap-2 items-center">
+                      <Image
+                        width={24}
+                        height={24}
+                        src={item.src}
+                        alt={item.title}
+                      />
+                      {item.title}
+                    </h2>
+                    <p className="text-xs md:text-[16px]">{item.text}</p>
+                    <hr
+                      className={`mt-2 bg-[#676565] 
+                        ${
+                          item.title === 'Твоя ідея – майбутній стартап'
+                            ? 'hidden'
+                            : ''
+                        }
+                      `}
                     />
-                    {item.title}
-                  </h2>
-                  <p className="text-xs md:text-[16px]">{item.text}</p>
-                  <hr
-                    className={`mt-2 bg-[#676565] 
-                      ${
-                        item.title === 'Твоя ідея – майбутній стартап'
-                          ? 'hidden'
-                          : ''
-                      }
-                    `}
-                  />
-                </div>
-              ))}
-              <Link href="#" className="w-full flex justify-center">
-                <ModalButton text="Зареєструватись" />
-              </Link>
+                  </div>
+                ))}
+                <Link href="#" className="w-full flex justify-center mt-4">
+                  <ModalButton text="Зареєструватись" />
+                </Link>
+              </div>
             </div>
           </ModalWindow>
         )}
@@ -122,35 +123,37 @@ const Whybec = () => {
               >
                 ×
               </button>
-              {partnersAdditional.map(item => (
-                <div key={item.src} className="mb-2">
-                  <h2 className="text-xl text-bec font-bold mb-3 flex gap-2 items-center">
-                    <Image
-                      width={24}
-                      height={24}
-                      src={item.src}
-                      alt={item.title}
+              <div className="max-h-[550px] overflow-y-auto">
+                {partnersAdditional.map(item => (
+                  <div key={item.src} className="mb-4">
+                    <h2 className="text-[18px] text-bec font-bold mb-3 flex gap-2 items-center">
+                      <Image
+                        width={24}
+                        height={24}
+                        src={item.src}
+                        alt={item.title}
+                      />
+                      {item.title}
+                    </h2>
+                    <p className="text-xs md:text-[16px]">{item.text}</p>
+                    <hr
+                      className={`mt-2 bg-[#676565] 
+                        ${
+                          item.title === 'Твоя ідея – майбутній стартап'
+                            ? 'hidden'
+                            : ''
+                        }
+                      `}
                     />
-                    {item.title}
-                  </h2>
-                  <p className="text-xs md:text-[16px]">{item.text}</p>
-                  <hr
-                    className={`mt-2 bg-[#676565] 
-                      ${
-                        item.title === 'Твоя ідея – майбутній стартап'
-                          ? 'hidden'
-                          : ''
-                      }
-                    `}
-                  />
-                </div>
-              ))}
-              <Link
-                href="/becomepartner/"
-                className="w-full flex justify-center"
-              >
-                <ModalButton text="Стати Партнером" />
-              </Link>
+                  </div>
+                ))}
+                <Link
+                  href="/becomepartner/"
+                  className="w-full flex justify-center mt-4"
+                >
+                  <ModalButton text="Стати Партнером" />
+                </Link>
+              </div>
             </div>
           </ModalWindow>
         )}

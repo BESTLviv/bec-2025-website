@@ -4,7 +4,7 @@ import AnimatedCircle from './ui/AnimatedCircle';
 
 const Bot = () => {
   return (
-    <section className="pt-40 h-[1340px] relative">
+    <section className="pt-40 h-[1240px] relative">
       <h1 className="uppercase text-center text-4xl px-2 md:text-[52px] font-semibold">
         BEST Engineering BOT
       </h1>

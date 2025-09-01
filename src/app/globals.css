@@ -77,3 +77,10 @@ body {
 .image-outline {
   filter: drop-shadow(0 0 10px #f5a020);
 }
+
+.bg-header {
+  background-image: url(/header/bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -16,10 +16,10 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
         fill
         alt="hero background"
         src="/hero/hero-bg.svg"
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-90"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-100"
       />
 
-      <div className="container mx-auto px-4 h-full pt-45 sm:pt-30 md:pt-50">
+      <div className="container mx-auto px-4 h-full pt-35 sm:pt-30 md:pt-50">
         <div className="z-10 max-w-[1000px] space-y-3">
           <p
             className={`text-[45px] sm:text-[70px] lg:text-[80px] uppercase font-bold tracking-wide leading-[1.0] ${awide.className}`}
@@ -41,7 +41,7 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
           <p className="text-2xl sm:text-[28px] lg:text-3xl max-w-[900px]">
             Інженери не чекають на майбутнє — вони його будують
           </p>
-          <div className="flex-col justify-center items-center md:flex-row flex gap-4 md:gap-12 mt-5 md:mt-20 lg:mt-10">
+          <div className="flex-col justify-center items-center md:flex-row flex gap-2 md:gap-12 mt-2 md:mt-20 lg:mt-10">
             <Link href="#">
               <HeroButton text="ЗАРЕЄСТРУВАТИСЯ" />
             </Link>

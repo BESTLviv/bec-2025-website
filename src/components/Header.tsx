@@ -98,17 +98,17 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             aria-label="Toggle menu"
           >
             <span
-              className={`block h-0.5 w-7 bg-white transition-transform duration-300 ${
+              className={`block h-0.5 w-8 bg-bec transition-transform duration-300 ${
                 menuOpen ? 'rotate-45 translate-y-[9px]' : ''
               }`}
             />
             <span
-              className={`block h-0.5 w-7 bg-white transition-opacity duration-300 ${
+              className={`block h-0.5 w-8 bg-bec transition-opacity duration-300 ${
                 menuOpen ? 'opacity-0' : ''
               }`}
             />
             <span
-              className={`block h-0.5 w-7 bg-white transition-transform duration-300 ${
+              className={`block h-0.5 w-8 bg-bec transition-transform duration-300 ${
                 menuOpen ? '-rotate-45 -translate-y-1.5' : ''
               }`}
             />
@@ -118,12 +118,10 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
 
       {/* Mobile Menu Fullscreen */}
       <div
-        className={`fixed pb-[60px] top-0 left-0 w-full h-screen bg-header backdrop-blur-xl text-white flex flex-col items-center justify-center gap-10 text-2xl transition-transform duration-300 ease-in-out z-40 
+        className={`fixed pb-[60px] top-0 left-0 w-full h-screen bg-header opacity-100 backdrop-blur-xl text-white flex flex-col items-center justify-center gap-10 text-2xl transition-transform duration-300 ease-in-out z-40 
           ${menuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-sm -z-10"></div>
-
         <div>
           <a
             onClick={e => handleNavClick(e, 'home')}
@@ -138,7 +136,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             />
           </a>
         </div>
-        <ul className="flex flex-col gap-5 text-center text-3xl font-bold">
+        <ul className="flex flex-col gap-7 text-center text-[26px] font-bold">
           <li>
             <a
               className="hover:text-white hover:text-shadow-sm/30 hover:text-shadow-white transition-all duration-400 ease-in-out cursor-pointer"
