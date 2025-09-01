@@ -11,7 +11,7 @@ const Whybec = () => {
   >(null);
 
   return (
-    <div className="gap-10 xl:gap-0 flex justify-around mt-30 xl:mt-20 pb-10 px-3 md:mx-25 z-9 flex-wrap">
+    <div className="gap-10 xl:gap-0 flex justify-around mt-30 xl:mt-20 px-3 md:mx-25 z-9 flex-wrap">
       <div className="flex flex-col max-w-[350px] md:max-w-[480px]">
         <h1 className="text-2xl md:text-[32px]">
           ЧОМУ ПОТРІБНО ОБРАТИ{' '}
@@ -26,21 +26,22 @@ const Whybec = () => {
               формуватимете майбутнє галузі інженерії.
             </p>
             <div
-              className="flex gap-1 cursor-pointer mr-80"
+              className="flex gap-1 cursor-pointer justify-start"
               onClick={() => setOpenTooltip('student')}
             >
               <p className="text-bec">Детальніше</p>
               <Image
+                width={25}
+                height={25}
                 src="/general/details.svg"
-                width={42}
-                height={42}
                 alt="."
+                className="pt-0.5"
               />
             </div>
           </div>
           <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/3"></div>
         </div>
-        {openTooltip === 'student' && (
+        {openTooltip === 'partner' && (
           <ModalWindow onClose={() => setOpenTooltip(null)}>
             <div className="bg-[#181003] text-becwhite text-sm border-3 border-bec p-6 w-full shadow-lg relative z-10">
               <button
@@ -99,21 +100,22 @@ const Whybec = () => {
               знайомства та зробити впевнений крок у професійну сферу.
             </p>
             <div
-              className="flex gap-1 cursor-pointer mr-80"
+              className="flex gap-1 cursor-pointer justify-start"
               onClick={() => setOpenTooltip('partner')}
             >
               <p className="text-bec">Детальніше</p>
               <Image
+                width={25}
+                height={25}
                 src="/general/details.svg"
-                width={22}
-                height={22}
                 alt="."
+                className="pt-0.5"
               />
             </div>
           </div>
           <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/3"></div>
         </div>
-        {openTooltip === 'partner' && (
+        {openTooltip === 'student' && (
           <ModalWindow onClose={() => setOpenTooltip(null)}>
             <div className="bg-[#181003] text-becwhite text-sm border-3 border-bec p-6 w-full shadow-lg relative z-10">
               <button

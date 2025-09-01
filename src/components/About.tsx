@@ -68,7 +68,13 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
         fill
         src="/general/bg-1.png"
         alt="."
-        className="object-cover -z-10 opacity-70"
+        className="hidden sm:block object-cover -z-10 opacity-70"
+      />
+      <Image
+        fill
+        src="/general/bg-mobile-2.png"
+        alt="."
+        className="block sm:hidden object-cover w-[300px] h-[100px] -z-10 opacity-100"
       />
     </section>
   );

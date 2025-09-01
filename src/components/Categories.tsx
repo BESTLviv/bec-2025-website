@@ -11,7 +11,7 @@ const fadeUp = {
 
 const Categories = () => {
   return (
-    <section className="py-10 relative">
+    <section className="relative">
       <div className="relative flex items-center justify-center flex-col space-y-2 z-9">
         <h2 className="font-semibold text-base md:text-xl lg:text-2xl">
           Тема цьогорічних змагань:
@@ -157,7 +157,13 @@ const Categories = () => {
         fill
         src="/general/bg-2.png"
         alt="."
-        className="object-cover -z-11 opacity-70"
+        className="hidden sm:block object-cover -z-11 opacity-70"
+      />
+      <Image
+        fill
+        src="/general/bg-mobile-3.png"
+        alt="."
+        className="block sm:hidden object-cover w-[300px] h-[100px] -z-10 opacity-100"
       />
     </section>
   );

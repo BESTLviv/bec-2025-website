@@ -4,7 +4,7 @@ import AnimatedCircle from './ui/AnimatedCircle';
 
 const Bot = () => {
   return (
-    <section className="pt-40 h-[1240px] relative">
+    <section className="pt-15 sm:pt-40 h-[1140px] sm:h-[1340px] relative">
       <h1 className="uppercase text-center text-4xl px-2 md:text-[52px] font-semibold">
         BEST Engineering BOT
       </h1>
@@ -37,7 +37,7 @@ const Bot = () => {
           className="hidden md:block xl:hidden w-full absolute -bottom-20 sm:-bottom-40 md:-bottom-60 lg:-bottom-80 left-0 -z-1"
         />
       </div>
-      <div className="flex items-center mt-40 relative justify-center">
+      <div className="flex items-center mt-20 sm:mt-40 relative justify-center">
         <div className="absolute top-10 left-15 px-10 py-3">
           <h1 className="font-bold text-[18px]">
             Натискай на логотип,
@@ -60,7 +60,13 @@ const Bot = () => {
         fill
         src="/general/bg-3.png"
         alt="."
-        className="object-cover -z-11 h-[110vh] opacity-70"
+        className="hidden sm:block object-cover -z-11 h-[110vh] opacity-70"
+      />
+      <Image
+        fill
+        src="/general/bg-mobile-2.png"
+        alt="."
+        className="block sm:hidden object-cover -z-11 h-[110vh] opacity-100"
       />
     </section>
   );
