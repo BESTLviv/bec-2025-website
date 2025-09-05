@@ -32,8 +32,8 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
   }, [menuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-10 h-[100px] xl:h-[115px] backdrop-blur border-b-1 border-bec">
-      <div className="container mx-auto flex justify-between pt-3 xl:pt-6 15xl:pt-8 2xl:p-5.5 items-center z-20 px-10 2xl:px-13">
+    <header className="fixed top-0 left-0 w-full z-10 h-[80px] sm:h-[100px] xl:h-[115px] backdrop-blur border-b-1 border-bec">
+      <div className="container mx-auto flex justify-between pt-1.5 xl:pt-6 2xl:p-5.5 items-center z-20 px-10 2xl:px-13">
         <Link
           className="z-20 cursor-pointer"
           href="/"

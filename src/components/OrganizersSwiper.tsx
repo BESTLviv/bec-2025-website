@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -32,7 +32,7 @@ const OrganizersSwiper = () => {
         />
       </button>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         spaceBetween={200}
         loop={true}
         centeredSlides={true}
@@ -40,6 +40,10 @@ const OrganizersSwiper = () => {
         navigation={{
           nextEl: '.swiper-button-nextt',
           prevEl: '.swiper-button-prevv',
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         breakpoints={{
           0: { slidesPerView: 1 },
@@ -51,8 +55,8 @@ const OrganizersSwiper = () => {
           <SwiperSlide
             key={organizer.key}
             className="
-              mt-10 ml-9 sm:ml-8 lg:ml-0 max-w-[220px] sm:max-w-[300px] max-h-[680px] flex flex-col items-center justify-center text-center h-full pt-2
-            "
+          mt-10 w-[230px] sm:max-w-[310px] max-h-[680px] flex flex-col items-center justify-center text-center h-full pt-2
+        "
           >
             <Image
               width={300}
@@ -60,36 +64,36 @@ const OrganizersSwiper = () => {
               alt="."
               src={organizer.src}
               className="
-              w-[240px] sm:w-[290px] h-[320px] sm:h-[357px] mx-auto
-              [.swiper-slide-prev_&]:h-[335px] [.swiper-slide-prev_&]:w-[250px]
-              [.swiper-slide-next_&]:h-[335px] [.swiper-slide-next_&]:w-[250px]
-              [.swiper-slide-prev_&]:mt-[45px] [.swiper-slide-next_&]:mt-[45px]
-              [_.swiper-slide-active_&]:drop-shadow-[0_0_25px_var(--color-bec-glow)] 
-              "
+          sm:w-[350px] h-[310px] sm:h-[337px] mx-auto
+          [.swiper-slide-prev_&]:h-[285px] [.swiper-slide-prev_&]:w-[200px]
+          [.swiper-slide-next_&]:h-[285px] [.swiper-slide-next_&]:w-[200px]
+          [.swiper-slide-prev_&]:mt-[55px] [.swiper-slide-next_&]:mt-[55px]
+          [_.swiper-slide-active_&]:drop-shadow-[0_0_25px_var(--color-bec-glow)] 
+          "
             />
             <div
               className="
-              flex flex-col items-center justify-center p-3 text-center z-10 border-2 
-              border-bec slider-bg h-[142px] 
-              [_.swiper-slide-prev_&]:h-[100px] 
-              [_.swiper-slide-next_&]:h-[100px] 
-            "
+          flex flex-col items-center justify-center p-3 text-center z-10 border-2 
+          border-bec slider-bg h-[142px] 
+          [_.swiper-slide-prev_&]:h-[100px] 
+          [_.swiper-slide-next_&]:h-[100px] 
+        "
             >
               <h1
                 className="
-                font-bold text-[22px] sm:text-[20px] 
-                [_.swiper-slide-prev_&]:hidden 
-                [_.swiper-slide-next_&]:hidden
-              "
+            font-bold text-[22px] sm:text-[20px] 
+            [_.swiper-slide-prev_&]:hidden 
+            [_.swiper-slide-next_&]:hidden
+          "
               >
                 {organizer.name}
               </h1>
               <div
                 className="
-                w-50 h-0.5 bg-bec mx-auto my-2 
-                sm:[_.swiper-slide-prev_&]:hidden 
-                sm:[_.swiper-slide-next_&]:hidden
-              "
+            w-50 h-0.5 bg-bec mx-auto my-2 
+            sm:[_.swiper-slide-prev_&]:hidden 
+            sm:[_.swiper-slide-next_&]:hidden
+          "
               />
               <h1 className="font-bold text-[20px] sm:text-[20px]">
                 {organizer.position}

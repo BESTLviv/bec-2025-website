@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -32,7 +32,7 @@ const OrganizersSwiperSm = () => {
         />
       </button>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
         loop={true}
@@ -41,6 +41,10 @@ const OrganizersSwiperSm = () => {
         navigation={{
           nextEl: '.swiper-button-nextt',
           prevEl: '.swiper-button-prevv',
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         className="mx-auto"
       >
