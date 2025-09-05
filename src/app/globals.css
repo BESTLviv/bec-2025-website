@@ -14,10 +14,11 @@
 }
 
 @theme {
+  --breakpoint-xxl2: 100rem;
+  /* --breakpoint-3xl: 1677px; */
   --animate-spinSlow: spin 10s linear infinite;
   --animate-spinSlower: spin 15s linear infinite;
   --animate-spinReverseSlow: spinReverse 10s linear infinite;
-  --breakpoint-3xl: 1677px;
 }
 
 @keyframes gradientShift {
@@ -36,10 +37,6 @@
   100% {
     transform: rotate(-360deg);
   }
-}
-
-@theme {
-  --breakpoint-15xl: 1440px;
 }
 
 body {
@@ -83,4 +80,69 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Стилі для кастомного скролбару */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #ff6a00; /* помаранчевий бігунець */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Firefox */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #ff6a00 transparent;
+}
+
+.custom-scroll-md::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll-md::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll-md::-webkit-scrollbar-thumb {
+  background-color: var(--color-becwhite);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Firefox */
+.custom-scroll-md {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-becwhite) transparent;
+}
+
+/* Chrome, Edge, Opera */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 6px;
+  border: 2px solid #1e1e1e;
+}
+
+/* Firefox */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bec) #00000000;
 }

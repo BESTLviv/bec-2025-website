@@ -2,8 +2,9 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import OrganizersSwiper from '@/components/OrganizersSwiper';
+import OrganizersSwiperSm from '@/components/OrganizersSwiperSm';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function Organizers() {
   const HomeRef = useRef<HTMLHeadingElement>(null);
@@ -12,6 +13,9 @@ export default function Organizers() {
   const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {});
+
   return (
     <div className="relative">
       <Image
@@ -68,7 +72,12 @@ export default function Organizers() {
         </p>
       </div>
 
-      <OrganizersSwiper />
+      <div className="hidden xl:block">
+        <OrganizersSwiper />
+      </div>
+      <div className="block xl:hidden">
+        <OrganizersSwiperSm />
+      </div>
 
       <Footer />
     </div>

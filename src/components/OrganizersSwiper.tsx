@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const OrganizersSwiper = () => {
   return (
-    <div className="relative w-[270px] sm:w-[340px] lg:w-[1000px] xl:w-[1300px] h-[700px] flex items-center justify-center pb-20 mx-auto">
+    <div className="relative w-[270px] sm:w-[340px] lg:w-[1000px] xl:w-[1100px] h-[700px] flex items-center justify-center pb-20 mx-auto">
       <button
         className="swiper-button-prevv absolute -left-10 sm:-left-20 top-1/2 z-20 -translate-y-1/2 w-12 h-12 rounded-full shadow flex items-center justify-center hover:scale-115 transition-all duration-150 ease cursor-pointer text-white"
         aria-label="Previous"
@@ -60,10 +60,10 @@ const OrganizersSwiper = () => {
               alt="."
               src={organizer.src}
               className="
-              w-[240px] sm:w-[290px] h-[320px] sm:h-[417px] mx-auto
-              [.swiper-slide-prev_&]:h-[355px] [.swiper-slide-prev_&]:w-[250px]
-              [.swiper-slide-next_&]:h-[355px] [.swiper-slide-next_&]:w-[250px]
-              [.swiper-slide-prev_&]:mt-[65px] [.swiper-slide-next_&]:mt-[65px]
+              w-[240px] sm:w-[290px] h-[320px] sm:h-[357px] mx-auto
+              [.swiper-slide-prev_&]:h-[335px] [.swiper-slide-prev_&]:w-[250px]
+              [.swiper-slide-next_&]:h-[335px] [.swiper-slide-next_&]:w-[250px]
+              [.swiper-slide-prev_&]:mt-[45px] [.swiper-slide-next_&]:mt-[45px]
               [_.swiper-slide-active_&]:drop-shadow-[0_0_25px_var(--color-bec-glow)] 
               "
             />
@@ -77,7 +77,7 @@ const OrganizersSwiper = () => {
             >
               <h1
                 className="
-                font-bold text-[22px] sm:text-2xl 
+                font-bold text-[22px] sm:text-[20px] 
                 [_.swiper-slide-prev_&]:hidden 
                 [_.swiper-slide-next_&]:hidden
               "
@@ -91,7 +91,7 @@ const OrganizersSwiper = () => {
                 sm:[_.swiper-slide-next_&]:hidden
               "
               />
-              <h1 className="font-bold text-[20px] sm:text-[22px]">
+              <h1 className="font-bold text-[20px] sm:text-[20px]">
                 {organizer.position}
               </h1>
             </div>

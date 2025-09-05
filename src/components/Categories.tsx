@@ -24,7 +24,7 @@ const Categories = () => {
           height={20}
           src="/categories/topic.svg"
           alt="."
-          className="w-full absolute hidden sm:block xl:-top-24 2xl:-top-28 left-0 -z-1"
+          className="w-full absolute hidden sm:block xl:-top-24 2xl:-top-25 xxl2:-top-30 left-0 -z-1"
         />
         <Image
           width={20}

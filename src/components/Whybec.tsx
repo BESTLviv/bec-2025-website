@@ -125,7 +125,7 @@ const Whybec = () => {
               >
                 ×
               </button>
-              <div className="max-h-[550px] overflow-y-auto">
+              <div className="max-h-[550px] custom-scroll-modal overflow-y-auto">
                 {partnersAdditional.map(item => (
                   <div key={item.src} className="mb-4">
                     <h2 className="text-[18px] text-bec font-bold mb-3 flex gap-2 items-center">
