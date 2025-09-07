@@ -22,7 +22,7 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
       <div className="container mx-auto px-4 h-full pt-35 sm:pt-30 md:pt-50">
         <div className="z-10 max-w-[1000px] space-y-3">
           <p
-            className={`text-[45px] sm:text-[70px] lg:text-[80px] uppercase font-bold tracking-wide leading-[1.0] ${awide.className}`}
+            className={`text-[38px] sm:text-[70px] lg:text-[80px] uppercase font-bold tracking-wide leading-[1.0] ${awide.className}`}
           >
             BEST Engineering Competition
           </p>

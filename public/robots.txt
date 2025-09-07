@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bec.best-lviv.org.ua
+
+# Sitemaps
+Sitemap: https://bec.best-lviv.org.ua/sitemap.xml

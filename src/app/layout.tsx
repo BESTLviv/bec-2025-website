@@ -10,7 +10,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'BEC 2025 — BEST Engineering Competition',
-  description: '',
+  description:
+    'BEST Engineering Competitions 2024. Інженерні змагання повертаються. Спробуй себе в одній з двох запропонованих категорій і покажи за ким майбутнє!',
+  keywords: [
+    'бек',
+    'бест львів',
+    'bec',
+    'best lviv',
+    'Інженерні змагання',
+    'інженер',
+  ],
   icons: {
     icon: '/Bec-logo.svg',
   },

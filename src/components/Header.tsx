@@ -4,6 +4,7 @@ import HeaderButton from './ui/HeaderButton';
 import { HeaderProps } from '@/types/types';
 import { useRouter, usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import HeroButton from './ui/HeroButton';
 
 const Header = ({ scrollToSection, refs }: HeaderProps) => {
   const router = useRouter();
@@ -75,7 +76,10 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
           </li>
         </ul>
         <div className="hidden lg:flex gap-2">
-          <Link href="#">
+          <Link
+            href="#"
+            onClick={() => alert('Найближчим часом бот буде готовий')}
+          >
             <HeaderButton text="Зареєструватися" />
           </Link>
           <Link href="/becomepartner/">
@@ -110,7 +114,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
 
       {/* Mobile Menu Fullscreen */}
       <div
-        className={`fixed pb-[60px] top-0 left-0 w-full h-screen bg-header opacity-100 backdrop-blur-xl text-white flex flex-col items-center justify-center gap-10 text-2xl transition-transform duration-300 ease-in-out z-40 
+        className={`fixed top-0 left-0 w-full h-screen bg-header opacity-100 backdrop-blur-xl text-white flex flex-col items-center justify-center gap-5 text-2xl transition-transform duration-300 ease-in-out z-40 
           ${menuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
@@ -128,7 +132,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             />
           </a>
         </div>
-        <ul className="flex flex-col gap-7 text-center text-[26px] font-bold">
+        <ul className="flex flex-col gap-7 text-center text-[26px] font-bold pt-10">
           <li>
             <a
               className="hover:text-white hover:text-shadow-sm/30 hover:text-shadow-white transition-all duration-400 ease-in-out cursor-pointer"
@@ -154,6 +158,39 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             </a>
           </li>
         </ul>
+        <div className="flex flex-col gap-2 max-w-[300px]">
+          <Link
+            href="#"
+            onClick={() => alert('Найближчим часом бот буде готовий')}
+          >
+            <button className="relative group cursor-pointer w-[250px] pt-12 flex items-center justify-center">
+              <Image
+                width={570}
+                height={50}
+                src="/hero/hero-btn.svg"
+                alt="button background"
+                className="absolute top-7 left-0 transition-opacity duration-300 ease-in-out opacity-100 "
+              />
+              <span className="relative z-8 transition-transform duration-300 ease-in-out group-hover:scale-102 text-2xl">
+                Зареєструватися
+              </span>
+            </button>
+          </Link>
+          <Link href="/becomepartner/">
+            <button className="relative group cursor-pointer w-[250px] pt-12 flex items-center justify-center">
+              <Image
+                width={570}
+                height={50}
+                src="/hero/hero-btn.svg"
+                alt="button background"
+                className="absolute top-7 left-0 transition-opacity duration-300 ease-in-out opacity-100 "
+              />
+              <span className="relative z-8 transition-transform duration-300 ease-in-out group-hover:scale-102 text-2xl">
+                Стати партнером
+              </span>
+            </button>
+          </Link>
+        </div>
       </div>
     </header>
   );

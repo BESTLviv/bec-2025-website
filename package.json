@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -14,6 +15,7 @@
     "gsap": "^3.13.0",
     "micromodal": "^0.6.1",
     "next": "15.4.5",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-transition-group": "^4.4.5",

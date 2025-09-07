@@ -14,7 +14,7 @@ export default function AnimatedCircle() {
       <div className="w-[220px] h-[220px] md:w-[360px] md:h-[360px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spinSlow">
         <Image fill alt="." src="/animate/anim1.png" />
       </div>
-      <Link href="#">
+      <Link href="#" onClick={() => alert('Найближчим часом бот буде готовий')}>
         <Image
           width={150}
           height={150}
