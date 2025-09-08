@@ -39,7 +39,7 @@ const Whybec = () => {
               />
             </div>
           </div>
-          <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/3"></div>
+          <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/4 sm:left-1/3"></div>
         </div>
         {openTooltip === 'partner' && (
           <ModalWindow onClose={() => setOpenTooltip(null)}>
@@ -113,7 +113,7 @@ const Whybec = () => {
               />
             </div>
           </div>
-          <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/3"></div>
+          <div className="px-22 py-1.5 border-1 border-bec bg-bec max-w-[100px] absolute -top-2 left-1/4 sm:left-1/3"></div>
         </div>
         {openTooltip === 'student' && (
           <ModalWindow onClose={() => setOpenTooltip(null)}>

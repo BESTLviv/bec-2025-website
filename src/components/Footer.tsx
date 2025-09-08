@@ -5,14 +5,14 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-bec-bg">
-      <nav className="py-4 flex justify-between items-center mx-8 md:mx-15">
+      <nav className="py-2 sm:py-4 flex justify-between items-center mx-8 md:mx-15">
         <h2 className="font-semibold text-2xl md:text-3xl">2025</h2>
         <Image
           src="/footer/best_logo.svg"
           alt="."
           width={100}
           height={100}
-          className="ml-3 mr-3 490px:ml-10 md:ml-20"
+          className="ml-3 mr-3 md:ml-20 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
         />
         <div className="flex gap-3">
           <Link
@@ -25,7 +25,7 @@ const Footer = () => {
               alt="."
               width={40}
               height={40}
-              className="w-[35px] h-[35px] md:w-[40px] md:h-[40px]"
+              className="w-[30px] h-[30px] sm:w-[35px] sm:h-[35px] md:w-[40px] md:h-[40px]"
             />
           </Link>
 
@@ -34,7 +34,13 @@ const Footer = () => {
             href="https://t.me/bestlviv"
             target="_blank"
           >
-            <Image src="/footer/telegram.svg" alt="." width={35} height={35} />
+            <Image
+              src="/footer/telegram.svg"
+              alt="."
+              width={35}
+              height={35}
+              className="w-[30px] h-[30px] sm:w-[35px] sm:h-[35px]"
+            />
           </Link>
 
           <Link
@@ -42,7 +48,13 @@ const Footer = () => {
             href="https://www.linkedin.com/company/bestlviv/posts/?feedView=all"
             target="_blank"
           >
-            <Image src="/footer/linkedin.svg" alt="." width={40} height={40} />
+            <Image
+              src="/footer/linkedin.svg"
+              alt="."
+              width={40}
+              height={40}
+              className="w-[30px] h-[30px] sm:w-[35px] sm:h-[35px]"
+            />
           </Link>
 
           <Link
@@ -50,7 +62,13 @@ const Footer = () => {
             href="https://www.facebook.com/BEST.Lviv/?locale=uk_UA"
             target="_blank"
           >
-            <Image src="/footer/facebook.svg" alt="." width={20} height={30} />
+            <Image
+              src="/footer/facebook.svg"
+              alt="."
+              width={20}
+              height={30}
+              className="w-[30px] h-[30px] sm:w-[35px] sm:h-[35px]"
+            />
           </Link>
         </div>
       </nav>

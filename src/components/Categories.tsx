@@ -124,7 +124,7 @@ const Categories = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h1 className="text-bec-bg text-2xl sm:text-[32px] relative px-0 font-bold text-center">
+          <h1 className="text-bec-bg text-[23px] sm:text-[32px] relative px-0 font-bold text-center">
             Взаємодія між категоріями
             <Image
               fill

@@ -10,7 +10,7 @@ const OrganizersSwiperSm = () => {
   return (
     <div className="relative w-[300px] h-[500px] flex items-center justify-center pb-20 mx-auto">
       <button
-        className="swiper-button-nextt absolute -left-10 top-1/2 z-8 -translate-y-1/2 w-12 h-12 rounded-full shadow flex items-center justify-center hover:scale-115 transition-all duration-150 ease cursor-pointer text-white"
+        className="swiper-button-prevv absolute -left-10 top-1/2 z-8 -translate-y-1/2 w-12 h-12 rounded-full shadow flex items-center justify-center hover:scale-115 transition-all duration-150 ease cursor-pointer text-white"
         aria-label="Previous"
       >
         <Image
@@ -21,7 +21,7 @@ const OrganizersSwiperSm = () => {
         />
       </button>
       <button
-        className="swiper-button-prevv absolute -right-10 top-1/2 z-8 -translate-y-1/2 w-12 h-12 rounded-full shadow flex items-center justify-center hover:scale-115 transition-all duration-150 ease cursor-pointer"
+        className="swiper-button-nextt absolute -right-10 top-1/2 z-8 -translate-y-1/2 w-12 h-12 rounded-full shadow flex items-center justify-center hover:scale-115 transition-all duration-150 ease cursor-pointer"
         aria-label="Next"
       >
         <Image

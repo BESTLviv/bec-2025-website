@@ -15,7 +15,7 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
       <Image
         fill
         alt="hero background"
-        src="/hero/hero-bg.svg"
+        src="/hero/hero-bg.png"
         className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-100"
       />
 
