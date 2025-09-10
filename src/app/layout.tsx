@@ -32,6 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="Pj8JE_zL0HJvHhscDVJGurgVFddA9v4bqcW_1ctjdVY" />
       <body
         className={`${inter.variable} antialiased overflow-x-hidden relative`}
         cz-shortcut-listen="true"
