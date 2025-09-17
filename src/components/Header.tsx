@@ -77,7 +77,8 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
         </ul>
         <div className="hidden lg:flex gap-2">
           <Link
-            href="#"
+            href="https://t.me/bec2025b_bot"
+            target="_blank"
             onClick={() => alert('Найближчим часом бот буде готовий')}
           >
             <HeaderButton text="Зареєструватися" />

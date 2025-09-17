@@ -42,7 +42,8 @@ const Hero = React.forwardRef<HTMLDivElement>((props, ref) => {
             Інженери не чекають на майбутнє — вони його будують
           </p>
           <div className="flex-col justify-center items-center md:flex-row flex gap-2 md:gap-12 mt-2 md:mt-20 lg:mt-10">
-            <Link href="#">
+            <Link href="https://t.me/bec2025b_bot"
+            target="_blank">
               <HeroButton text="ЗАРЕЄСТРУВАТИСЯ" />
             </Link>
             <Link href="/becomepartner">
