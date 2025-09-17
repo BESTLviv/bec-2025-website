@@ -160,8 +160,8 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
         </ul>
         <div className="flex flex-col gap-2 max-w-[300px]">
           <Link
-            href="#"
-            onClick={() => alert('Найближчим часом бот буде готовий')}
+            href="https://t.me/bec2025b_bot"
+            target="_blank"
           >
             <button className="relative group cursor-pointer w-[250px] pt-12 flex items-center justify-center">
               <Image
