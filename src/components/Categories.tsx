@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 // simple fade-up animation
 const fadeUp = {
-  hidden: { opacity: 0, y: -40 },
+  hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
 };
 

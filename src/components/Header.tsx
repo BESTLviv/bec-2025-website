@@ -79,7 +79,6 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
           <Link
             href="https://t.me/bec2025b_bot"
             target="_blank"
-            onClick={() => alert('Найближчим часом бот буде готовий')}
           >
             <HeaderButton text="Зареєструватися" />
           </Link>
